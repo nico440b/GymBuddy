@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.LoginViewActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/layout_bg"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="-376dp" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="600dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/barbell_icon" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            style="@style/TextLabel"
+            android:fontFamily="@font/allerta"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/TextInput"
+            android:fontFamily="@font/allerta"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/pwLabel"
+            style="@style/TextLabel"
+            android:fontFamily="@font/allerta"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/TextInput"
+            android:fontFamily="@font/allerta"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/log_in_button"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_btn_2"
+            android:fontFamily="@font/allerta"
+            android:text="Log In"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/allerta"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="1"
+            android:text="Remember me"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Don't have a user? Sign up here"
+            android:textColor="@color/White"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/Blue"
+            android:fontFamily="@font/allerta"
+            android:text="Sign Up"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

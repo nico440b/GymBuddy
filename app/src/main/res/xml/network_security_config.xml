@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Code from https://stackoverflow.com/questions/53984725/networksecurityconfig-no-network-security-config-specified-using-platform-defa-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">api.openweathermap.org</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "853826653216",
+    "firebase_url": "https://gymbro-27b0f.firebaseio.com",
+    "project_id": "gymbro-27b0f",
+    "storage_bucket": "gymbro-27b0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853826653216:android:8a12b18c32f4958f39c045",
+        "android_client_info": {
+          "package_name": "com.example.gymBroApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853826653216-u9pd47qcvipcjf7prk5kv8f5uqiuuv7r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymBroApp",
+            "certificate_hash": "15ccdcf3f5471f821d13873a734f66b3115f2d8d"
+          }
+        },
+        {
+          "client_id": "853826653216-oiqoa75tkh2i1i7esia3qqgqqfdjv7su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDFuaNyAAPrK306p-x0ch53DNQ3jKBJHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853826653216-oiqoa75tkh2i1i7esia3qqgqqfdjv7su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
