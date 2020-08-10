@@ -1,4 +1,4 @@
-# GymBuddy
+# **GymBuddy**
 
 ## UI
 
@@ -10,8 +10,11 @@
 
 ![](carousel.gif)
 
-### Profile tab fetching a users data from Firebase
+### Profile tab fetches a users data from Firebase
 
-Possible to upload your own picture
+![](profile.gif)
+
+*Possible to upload your own picture*
 
 ## Functionality
+
