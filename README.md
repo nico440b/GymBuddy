@@ -4,7 +4,7 @@
 
 ## UI
 
-#### Log In
+#### A simple and user-friendly log in UI
 
 ![](login.gif)
 
