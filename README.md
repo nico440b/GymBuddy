@@ -12,6 +12,8 @@
 
 ![](carousel.gif)
 
+*Swipe and like the people you have similar workout routines with*
+
 ### Profile tab fetches a users data from Firebase
 
 ![](profile.gif)
