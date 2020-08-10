@@ -1,24 +1,30 @@
 # **GymBuddy**
 
-## UI
+### UI
 
-### Log In
+#### Log In
 
 ![](login.gif)
 
 *Using Firebase authorization to log in*
 
-### A discover tab to find yourself a new workout partner
+#### A discover tab to find yourself a new workout partner
 
 ![](carousel.gif)
 
 *Swipe and like the people you have similar workout routines with*
 
-### Profile tab fetches a users data from Firebase
+#### Profile tab fetches a users data from Firebase
 
 ![](profile.gif)
 
 *Possible to upload your own picture*
 
-## Functionality
+### Functionality
+
+#### Firebase
+
+#### Room
+
+####
 
