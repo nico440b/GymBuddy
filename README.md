@@ -1,5 +1,5 @@
 # GymBuddy
-AND Exam App
+
 UI
 
 
