@@ -55,6 +55,6 @@ This app uses components such as:
 
 * ViewPager - *For image carousel and the general layout*
 
-* Use of external opensource UI components
+* External open-source UI components
 
 
