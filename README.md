@@ -24,7 +24,14 @@
 
 #### Firebase
 
+* Authorization
+* Data Storage
+
 #### Room
 
-####
+* Local Data Storage
+* Offline capabilities
+* Data persistency
+
+#### API
 
