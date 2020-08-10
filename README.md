@@ -37,5 +37,24 @@
 
 ![](API2.png)
 
-* Fetch live data
+* Fetch live data from weathermap.org
 * Updated hourly
+
+
+## Code
+
+#### Design Patterns
+
+*This project uses MVVM as it's structural design pattern*
+
+#### Components
+
+This app uses components such as:
+
+* RecyclerView
+
+* ViewPager - *For image carousel and the general layout*
+
+* Use of external opensource UI components
+
+
