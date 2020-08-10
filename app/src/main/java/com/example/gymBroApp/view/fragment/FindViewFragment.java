@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 
@@ -20,6 +21,8 @@ import com.example.gymBroApp.R;
 import com.example.gymBroApp.adapter.UserAdapter;
 import com.example.gymBroApp.model.User;
 import com.example.gymBroApp.viewModel.UserViewModel;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
 
 import java.util.List;
 
@@ -30,29 +33,28 @@ public class FindViewFragment extends Fragment {
     private RecyclerView recyclerView;
     private UserAdapter adapter;
     private ProgressBar pbar;
+    CarouselView carouselView;
+    ImageListener imageListener;
+
+    int[] sampleImages = {R.drawable.user1_pic,R.drawable.user2_pic,R.drawable.user3_pic,R.drawable.user4_pic};
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.find_view_layout, container, false);
-        recyclerView = view.findViewById(R.id.findRecyclerView);
-        pbar = view.findViewById(R.id.findPbar);
+
+            carouselView = (CarouselView) view.findViewById(R.id.carouselView);
+            carouselView.setPageCount(sampleImages.length);
+            carouselView.setOverScrollMode(View.OVER_SCROLL_IF_CONTENT_SCROLLS);
 
 
-        viewModel = new ViewModelProvider(this).get(UserViewModel.class);
-        viewModel.getAllUsers().observe(getViewLifecycleOwner(), new Observer<List<User>>() {
-            @Override
-            public void onChanged(List<User> users) {
-                pbar.setVisibility(View.VISIBLE);
-                update();
-                pbar.setVisibility(View.INVISIBLE);
-            }
-        });
+            carouselView.setImageListener(new ImageListener() {
+                @Override
+                public void setImageForPosition(int position, ImageView imageView) {
+                    imageView.setImageResource(sampleImages[position]);
+                }
+            });
 
-
-
-        initRecyclerView();
-        pbar.setVisibility(View.INVISIBLE);
 
         return view;
     }
@@ -60,22 +62,8 @@ public class FindViewFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        pbar.setVisibility(View.VISIBLE);
+
     }
 
-    public void initRecyclerView(){
-        RecyclerView.LayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(linearLayoutManager);
-        adapter = new UserAdapter(getContext(),viewModel.getAllUsers().getValue());
-        recyclerView.setAdapter(adapter);
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getContext(),LinearLayoutManager.VERTICAL);
-        dividerItemDecoration.setDrawable(getContext().getResources().getDrawable(R.drawable.divider));
-        recyclerView.addItemDecoration(dividerItemDecoration);
-    }
-
-    public void update(){
-        adapter = new UserAdapter(getContext(),viewModel.getAllUsers().getValue());
-        recyclerView.setAdapter(adapter);
-    }
 
 }

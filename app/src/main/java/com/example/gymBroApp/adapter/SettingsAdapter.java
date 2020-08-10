@@ -1,6 +1,9 @@
 package com.example.gymBroApp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gymBroApp.R;
 import com.example.gymBroApp.model.SettingsItem;
+import com.example.gymBroApp.view.fragment.ProfileViewFragment;
 
 import java.util.ArrayList;
 
@@ -66,11 +70,28 @@ public class SettingsAdapter  extends RecyclerView.Adapter<SettingsAdapter.MyVie
 
         public MyViewHolder(View itemView, SettingsAdapter adapter) {
             super(itemView);
-            itemView.setOnClickListener(this);
             imgV= itemView.findViewById(R.id.iconSettings);
             textInputS = itemView.findViewById(R.id.textInputSettings);
             this.mAdapter = adapter;
+            itemView.setOnClickListener(this);
+            textInputS.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+                }
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    textInputS.getText();
+                    getAdapterPosition();
+
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+
+                }
+            });
         }
         @Override
         public void onClick(View view) {

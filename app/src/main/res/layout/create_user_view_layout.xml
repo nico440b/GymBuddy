@@ -59,12 +59,6 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="textEmailAddress" />
 
-            <ImageView
-                android:id="@+id/divider1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
-
             <TextView
                 android:id="@+id/pwText"
                 android:layout_width="match_parent"
@@ -83,12 +77,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/allerta"
                 android:inputType="textPassword" />
-
-            <ImageView
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
 
             <TextView
                 android:id="@+id/nameText"
@@ -109,11 +97,6 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="textPersonName" />
 
-            <ImageView
-                android:id="@+id/divider2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
 
             <TextView
                 android:id="@+id/ageText"
@@ -134,11 +117,6 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="number" />
 
-            <ImageView
-                android:id="@+id/divider3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
 
             <TextView
                 android:id="@+id/nrText"
@@ -159,11 +137,7 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="number" />
 
-            <ImageView
-                android:id="@+id/divider4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
+
 
             <TextView
                 android:id="@+id/locText"
@@ -184,11 +158,7 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="text" />
 
-            <ImageView
-                android:id="@+id/divider5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
+
 
             <TextView
                 android:id="@+id/workoutText"
@@ -209,11 +179,7 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="text" />
 
-            <ImageView
-                android:id="@+id/divider6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
+
 
             <TextView
                 android:id="@+id/weatherText"
@@ -234,18 +200,14 @@
                 android:fontFamily="@font/allerta"
                 android:inputType="text" />
 
-            <ImageView
-                android:id="@+id/divider7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/divider_bigger" />
+
 
             <Button
                 android:id="@+id/signUpBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_btn_2"
+                android:background="@drawable/ripple_effect_2"
                 android:fontFamily="@font/allerta"
                 android:text="Sign Up"
                 android:textColor="@color/White" />

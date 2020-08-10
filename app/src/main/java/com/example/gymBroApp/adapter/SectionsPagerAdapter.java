@@ -22,7 +22,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
 
-    private int [] imageId = {R.drawable.profile_icon_2,R.drawable.search_icon,R.drawable.msg_icon,R.drawable.cloudy_icon};
+    private int [] imageId = {R.drawable.profile_icon_2,R.drawable.barbell_icon,R.drawable.msg_icon,R.drawable.cloudy_icon};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {

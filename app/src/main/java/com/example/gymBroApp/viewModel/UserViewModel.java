@@ -38,6 +38,11 @@ public class UserViewModel extends AndroidViewModel {
         repo.deleteAllUsers();
     }
 
+    public void searchUser(String mail){
+
+        allUsers.getValue();
+    }
+
     public LiveData<List<User>> getAllUsers(){
         return allUsers;
     }

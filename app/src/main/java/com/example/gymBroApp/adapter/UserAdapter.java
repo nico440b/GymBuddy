@@ -38,9 +38,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
     public void onBindViewHolder(@NonNull UserHolder holder, int position) {
         User current = users.get(position);
         holder.tName.setText(current.getName());
-        holder.tAge.setText(String.valueOf(current.getAge()));
         holder.tWork.setText(current.getWorkPref());
-        holder.tWeather.setText(current.getWeatherPref());
     }
 
     @Override
@@ -63,9 +61,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
             this.adapter = adapter;
             img = itemView.findViewById(R.id.iconFind);
             tName = itemView.findViewById(R.id.nameView);
-            tAge = itemView.findViewById(R.id.ageView);
             tWork = itemView.findViewById(R.id.workoutPrefView);
-            tWeather = itemView.findViewById(R.id.weatherPrefView);
         }
     }
 }

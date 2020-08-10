@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
@@ -33,6 +34,7 @@ public class WeatherViewFragment extends Fragment {
     private ProgressBar pbar;
     private ImageButton btn;
     private EditText text;
+    private Button searchBtn;
     public String location;
 
 
@@ -52,6 +54,7 @@ public class WeatherViewFragment extends Fragment {
         text = view.findViewById(R.id.locationInput);
         pbar = view.findViewById(R.id.progressBarW);
         btn = view.findViewById(R.id.refreshBtn);
+        searchBtn = view.findViewById(R.id.weatherSearchBtn);
 
         mWeather.loadData().observe(getViewLifecycleOwner(), new Observer<WeatherResponse>() {
             @Override
@@ -81,6 +84,23 @@ public class WeatherViewFragment extends Fragment {
             }
         });
 
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pbar.setVisibility(View.VISIBLE);
+                location = text.getText().toString();
+                mWeather.init(location);
+                mWeather.loadData().getValue();
+                mWeather.loadData().observe(getViewLifecycleOwner(), new Observer<WeatherResponse>() {
+                    @Override
+                    public void onChanged(WeatherResponse weatherResponse) {
+                        update();
+                    }
+                });
+                pbar.setVisibility(View.INVISIBLE);
+            }
+        });
+
         initRecyclerView();
         return view;
     }
@@ -90,9 +110,9 @@ public class WeatherViewFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         adapter = new WeatherAdapter(getContext(),list);
         recyclerView.setAdapter(adapter);
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getContext(),LinearLayoutManager.VERTICAL);
-        dividerItemDecoration.setDrawable(getContext().getResources().getDrawable(R.drawable.divider));
-        recyclerView.addItemDecoration(dividerItemDecoration);
+        /*DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getContext(),LinearLayoutManager.VERTICAL);
+        dividerItemDecoration.setDrawable(getContext().getResources().getDrawable(R.drawable.divider_2));
+        recyclerView.addItemDecoration(dividerItemDecoration);*/
     }
     public void update(){
 

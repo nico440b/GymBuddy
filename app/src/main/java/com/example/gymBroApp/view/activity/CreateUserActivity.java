@@ -79,12 +79,14 @@ public class CreateUserActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             FirebaseUser user = mAuth.getCurrentUser();
+
                         }
                         else {
                             Toast.makeText(v.getContext(), "Couldn't create user", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+                Toast.makeText(v.getContext(), "User created", Toast.LENGTH_SHORT).show();
                 OpenLogInPage();
 
             }

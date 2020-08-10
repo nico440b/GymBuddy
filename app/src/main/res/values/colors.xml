@@ -11,6 +11,7 @@
     <color name="Green">#0F0</color>
     <color name="TransparentGrey">#99000000</color>
     <color name="Blue">#DA2C5161</color>
+    <color name="BgGrey">#0C0E0F</color>
 
     <color name="gradientStart">#0F0C0C0C</color>
     <color name="gradientEnd">#812A2D35</color>
