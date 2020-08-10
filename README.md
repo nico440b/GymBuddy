@@ -14,4 +14,4 @@
 
 Possible to upload your own picture
 
-Functionality
+## Functionality
