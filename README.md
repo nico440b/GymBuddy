@@ -1,6 +1,6 @@
 # **GymBuddy**
 
-### UI
+## UI
 
 #### Log In
 
@@ -20,7 +20,7 @@
 
 *Possible to upload your own picture*
 
-### Functionality
+## Functionality
 
 #### Firebase
 
