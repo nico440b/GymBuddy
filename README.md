@@ -2,6 +2,10 @@
 
 ## UI
 
+### Log In
+
+![](login.gif)
+
 ### A discover tab to find yourself a new workout partner
 
 ![](carousel.gif)
