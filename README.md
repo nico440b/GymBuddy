@@ -38,7 +38,7 @@
 ![](API2.png)
 
 * Fetch live data from weathermap.org
-* Updated hourly
+* Updates automatically
 
 
 ## Code
