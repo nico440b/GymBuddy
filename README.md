@@ -36,3 +36,6 @@
 #### API
 
 ![](API2.png)
+
+* Fetch live data
+* Updated hourly
