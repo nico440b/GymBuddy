@@ -1,5 +1,7 @@
 # **GymBuddy**
 
+*An Android Development exam app*
+
 ## UI
 
 #### Log In
@@ -40,6 +42,8 @@
 * Data persistency
 
 #### API
+
+***The reason for using weathermap API is due to exam requirements***
 
 ![](API2.png)
 
