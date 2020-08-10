@@ -20,6 +20,12 @@
 
 *Possible to upload your own picture*
 
+#### Message your workout partners
+
+***This feature is not finished - but this will be the general layout***
+
+![](msg.gif)
+
 ## Functionality
 
 #### Firebase
